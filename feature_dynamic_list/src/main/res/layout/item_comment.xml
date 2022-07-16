@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+      android:id="@+id/tvTitle"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:textColor="@color/black"
+      android:textSize="@dimen/sp_20"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:text="@string/app_name"/>
+
+    <TextView
+      android:id="@+id/tvComment"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/dp_16"
+      android:padding="6dp"
+      android:text="@string/provide_comment"
+      android:textColor="@color/black"
+      android:textSize="16sp"
+      app:layout_constraintEnd_toStartOf="@id/switchComment"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/tvTitle"/>
+
+    <Switch
+      android:id="@+id/switchComment"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/dp_16"
+      android:padding="4dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@id/tvComment"
+      app:layout_constraintTop_toBottomOf="@id/tvTitle"
+      tools:ignore="UseSwitchCompatOrMaterialXml"/>
+
+    <EditText
+      android:id="@+id/etComment"
+      android:layout_width="match_parent"
+      android:layout_height="100dp"
+      android:layout_margin="4dp"
+      android:hint="@string/type_comment"
+      android:importantForAutofill="no"
+      android:inputType="text"
+      android:visibility="gone"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/tvComment"/>
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

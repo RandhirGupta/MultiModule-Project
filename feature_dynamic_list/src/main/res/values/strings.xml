@@ -1,0 +1,8 @@
+<resources>
+  <string name="app_name">feature_dynamic_list</string>
+  <string name="provide_comment">Provide comment?</string>
+  <string name="type_comment">Type comment</string>
+  <string name="retry">retry</string>
+  <string name="error_message">Something went wrong at our end!</string>
+  <string name="submit">Submit</string>
+</resources>
